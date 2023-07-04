@@ -9,9 +9,7 @@ responseQ.innerHTML =`las respuestas son: </br> </br>${response1}</br> ${respons
 };
     const btnO = document.getElementById("btnOne");
     btnO.addEventListener("click", result)
-
-
-
+    
 const HidenShow = () => {
     let name = document.getElementById("nameUser").value;
     localStorage.setItem("user",name);
