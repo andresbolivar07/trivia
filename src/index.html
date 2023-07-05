@@ -18,8 +18,15 @@
                 <label for="nameUser"> Escriba su nombre</label>
                 <input type="text" name="name" id="nameUser">
             </div>
+            <div id="optionGame">
+                <p id="selectGame">¿Qué tema quieres jugar?</p>
+                <button id="btnOpGa1" type="button" class="btn">Astronomía</button>
+                <br>
+                <button id="btnOpGa2" type="button" class="btn">Comida</button>
+            </div>
+            <br>
             <div id="btnI">
-                <button id="buttonInitial" >A Jugar!</button>
+                <button id="buttonInitial" class="btn" >A Jugar!</button>
             </div>
         </div>    
         <div id="backgroundQuestion">
@@ -28,52 +35,98 @@
                 </div>
                 <p>A continuación encontraras preguntas básicas sobre astronomía</p>
             </div>
-            <div id="question1">
-                <div>
-                    <h2>Pregunta No. 1</h2>
-                    <p>¿A qué hace referencia el termino unidad astronómica?</p>
+            <div id="astronomy">
+                <div id="question1">
+                    <div>
+                        <h2>Pregunta No. 1</h2>
+                        <p>¿A qué hace referencia el termino unidad astronómica?</p>
+                    </div>
+                    <div>
+                        <input type="radio" id="cbox1" class="result" name="opcion" />
+                        <label for="cbox1">A la distancia que hay en km entre el sol y el planeta marte.</label>
+                    <br>
+                        <input type="radio" id="cbox2" class="result" name="opcion" />
+                        <label for="cbox2">A la distancia en km entre la tierra y la luna.</label>
+                    <br>
+                        <input type="radio" id="cbox3" class="result" name="opcion" />
+                        <label for="cbox3">A la distancia en km entre la tierra y el sol (aproximadamente 150 millones de km).</label>
+                    </div>
+                </div>
+                <div id="question2">
+                    <div>
+                        <h2>Pregunta No. 2</h2>
+                        <p>¿En terminos de distancia un año luz equivale a?</p>
+                    <br>
+                        <input type="radio" id="cbox4" class="result" name="opcion2" />
+                        <label for="cbox4">La distancia que hay entre el sol y el planeta Venus.</label>
+                    <br>
+                        <input type="radio" id="cbox5" class="result" name="opcion2" />
+                        <label for="cbox5">Aproximadamente 9 billones de km.</label>
+                    <br>
+                        <input type="radio" id="cbox6" class="result" name="opcion2" />
+                        <label for="cbox6" id="response">A una unidad astronómica (150 millones de km).</label>
+                    </div>
+                </div>
+                <div id="question3">
+                    <div>
+                        <h2>Pregunta No. 3</h2>
+                        <p>¿Cúal es el planeta No. 5 de nuestro sistema solar?</p>
+                    <br>
+                        <input type="radio" id="cbox7" class="result" name="opcion3" />
+                        <label for="cbox4">Jupiter.</label>
+                    <br>
+                        <input type="radio" id="cbox8" class="result" name="opcion3" />
+                        <label for="cbox5">Neptuno.</label>
+                    <br>
+                        <input type="radio" id="cbox9" class="result" name="opcion3" />
+                        <label for="cbox6" id="response">Mercurio.</label>
+                    </div>
+                </div>
+            <div id="food">
+                <div id="questionF1">
+                    <h2>Pregunta No.1</h2>
+                    <p>¿Cúal es el origen de pizza?</p>
                 </div>
                 <div>
-                    <input type="radio" id="cbox1" class="result" name="opcion" />
-                    <label for="cbox1">A la distancia que hay en km entre el sol y el planeta marte.</label>
+                    <input type="radio" id="cboxF1" class="result" name="optionF1" />
+                    <label for="cboxF1">Italia.</label>
                 <br>
-                    <input type="radio" id="cbox2" class="result" name="opcion" />
-                    <label for="cbox2">A la distancia en km entre la tierra y la luna.</label>
+                    <input type="radio" id="cboxF2" class="result" name="optionF1" />
+                    <label for="cboxF2">España.</label>
                 <br>
-                    <input type="radio" id="cbox3" class="result" name="opcion" />
-                    <label for="cbox3">A la distancia en km entre la tierra y el sol (aproximadamente 150 millones de km).</label>
+                    <input type="radio" id="cboxF3" class="result" name="optionF1" />
+                    <label for="cboxF3">Mexico.</label>
+                </div>
+                <div id="questionF2">
+                    <h2>Pregunta No.2</h2>
+                    <p>¿Cuales son los principales ingredientes para preparar arroz?</p>
+                </div>
+                <div>
+                    <input type="radio" id="cboxF4" class="result" name="optionF2" />
+                    <label for="cboxF4">Frijoles, piña, aguacate y azucar.</label>
+                <br>
+                    <input type="radio" id="cboxF5" class="result" name="optionF2" />
+                    <label for="cboxF5">Agua, arroz, aceite, azucar.</label>
+                <br>
+                    <input type="radio" id="cboxF6" class="result" name="optionF2" />
+                    <label for="cboxF6">Arroz, agua, aceite y sal.</label>
+                </div>
+                <div id="questionF3">
+                    <h2>Pregunta No.3</h2>
+                    <p>¿Cúal es el principal ingrediente de los tacos mexicanos?</p>
+                </div>
+                <div>
+                    <input type="radio" id="cboxF7" class="result" name="optionF3" />
+                    <label for="cboxF7">Lechuga</label>
+                <br>
+                    <input type="radio" id="cboxF8" class="result" name="optionF3" />
+                    <label for="cboxF8">Carne.</label>
+                <br>
+                    <input type="radio" id="cboxF9" class="result" name="optionF3" />
+                    <label for="cboxF9">Tortillas.</label>
                 </div>
             </div>
-            <div id="question2">
-                <div>
-                    <h2>Pregunta No. 2</h2>
-                    <p>¿En terminos de distancia un año luz equivale a?</p>
-                <br>
-                    <input type="radio" id="cbox4" class="result" name="opcion2" />
-                    <label for="cbox4">La distancia que hay entre el sol y el planeta Venus.</label>
-                <br>
-                    <input type="radio" id="cbox5" class="result" name="opcion2" />
-                    <label for="cbox5">Aproximadamente 9 billones de km.</label>
-                <br>
-                    <input type="radio" id="cbox6" class="result" name="opcion2" />
-                    <label for="cbox6" id="response">A una unidad astronómica (150 millones de km).</label>
-                </div>
-            </div>
-            <div id="question3">
-                <div>
-                    <h2>Pregunta No. 3</h2>
-                    <p>¿Cúal es el planeta No. 5 de nuestro sistema solar?</p>
-                <br>
-                    <input type="radio" id="cbox7" class="result" name="opcion3" />
-                    <label for="cbox4">Jupiter.</label>
-                <br>
-                    <input type="radio" id="cbox8" class="result" name="opcion3" />
-                    <label for="cbox5">Neptuno.</label>
-                <br>
-                    <input type="radio" id="cbox9" class="result" name="opcion3" />
-                    <label for="cbox6" id="response">Mercurio.</label>
-                </div>
-            </div>
+        </div>
         <br>
             <div id="btnSend">
                 <button type="button" id="btnOne" class="btn">Enviar</button>
@@ -85,6 +138,11 @@
         <div id="resp2"></div>
         <br>
         <div id="resp3"></div>
+        <div id="respF"></div>
+        <br>
+        <div id="respF2"></div>
+        <br>
+        <div id="respF3"></div>
     </main>
     <footer></footer>
     <div id="btnReload">
