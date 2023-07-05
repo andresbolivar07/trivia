@@ -37,6 +37,11 @@ const result = () => {
     btnO.addEventListener("click", result)
     
 const HidenShow = () => {
+    const nameBtn = document.getElementById("nameUser").value;
+    if (nameBtn.length < 1) {
+        alert("Por favor ingrese su nombre");
+    }else{
+
     let name = document.getElementById("nameUser").value;
     localStorage.setItem("user",name);
     const InitialHiden = document.getElementById("initial");
@@ -47,10 +52,20 @@ const HidenShow = () => {
 
     const callName = document.getElementById("userName");
     callName.innerHTML = `Bienvenido ${localStorage.getItem("user")}.`;
+
+    const btnFinal = document.getElementById("btnReload");
+    btnFinal.style.display = "block";
+    }
 }
 
 const btnInitial = document.getElementById("buttonInitial");
 btnInitial.addEventListener("click", HidenShow);
+
+const goToHome = () => {
+        window.location.reload("index.html")
+}
+const btnHome = document.getElementById("btnF");
+btnHome.addEventListener("click", goToHome);
 
 
 
