@@ -1,6 +1,19 @@
-#backgroundQuestion {
+
+#astronomy{
     display: none;
 }
 #btnReload{
+    display: none;
+}
+#btnAstro{
+    display: none;
+}
+#food {
+    display: none;
+}
+#btnSendAstronomy{
+    display: none;
+}
+#btnSendFood{
     display: none;
 }

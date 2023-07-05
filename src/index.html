@@ -25,21 +25,16 @@
                 <button id="btnOpGa2" type="button" class="btn">Comida</button>
             </div>
             <br>
-            <div id="btnI">
-                <button id="buttonInitial" class="btn" >A Jugar!</button>
-            </div>
         </div>    
         <div id="backgroundQuestion">
-            <div id="intro">
-                <div id="userName">
-                </div>
-                <p>A continuación encontraras preguntas básicas sobre astronomía</p>
-            </div>
             <div id="astronomy">
+                <div id="userName">
+                </div> 
+                <p>A continuación encontraras preguntas básicas sobre astronomía</p>
                 <div id="question1">
                     <div>
                         <h2>Pregunta No. 1</h2>
-                        <p>¿A qué hace referencia el termino unidad astronómica?</p>
+                        <p>¿A qué hace referencia el término unidad astronómica?</p>
                     </div>
                     <div>
                         <input type="radio" id="cbox1" class="result" name="opcion" />
@@ -53,35 +48,37 @@
                     </div>
                 </div>
                 <div id="question2">
-                    <div>
-                        <h2>Pregunta No. 2</h2>
-                        <p>¿En terminos de distancia un año luz equivale a?</p>
-                    <br>
-                        <input type="radio" id="cbox4" class="result" name="opcion2" />
-                        <label for="cbox4">La distancia que hay entre el sol y el planeta Venus.</label>
-                    <br>
-                        <input type="radio" id="cbox5" class="result" name="opcion2" />
-                        <label for="cbox5">Aproximadamente 9 billones de km.</label>
-                    <br>
-                        <input type="radio" id="cbox6" class="result" name="opcion2" />
-                        <label for="cbox6" id="response">A una unidad astronómica (150 millones de km).</label>
-                    </div>
+                        <div>
+                            <h2>Pregunta No. 2</h2>
+                            <p>¿En términos de distancia un año luz equivale a?</p>
+                        <br>
+                            <input type="radio" id="cbox4" class="result" name="opcion2" />
+                            <label for="cbox4">La distancia que hay entre el sol y el planeta Venus.</label>
+                        <br>
+                            <input type="radio" id="cbox5" class="result" name="opcion2" />
+                            <label for="cbox5">Aproximadamente 9 billones de km.</label>
+                        <br>
+                            <input type="radio" id="cbox6" class="result" name="opcion2" />
+                            <label for="cbox6" id="response">A una unidad astronómica (150 millones de km).</label>
+                        </div>
                 </div>
                 <div id="question3">
-                    <div>
-                        <h2>Pregunta No. 3</h2>
-                        <p>¿Cúal es el planeta No. 5 de nuestro sistema solar?</p>
-                    <br>
-                        <input type="radio" id="cbox7" class="result" name="opcion3" />
-                        <label for="cbox4">Jupiter.</label>
-                    <br>
-                        <input type="radio" id="cbox8" class="result" name="opcion3" />
-                        <label for="cbox5">Neptuno.</label>
-                    <br>
-                        <input type="radio" id="cbox9" class="result" name="opcion3" />
-                        <label for="cbox6" id="response">Mercurio.</label>
-                    </div>
+                        <div>
+                            <h2>Pregunta No. 3</h2>
+                            <p>¿Cúal es el planeta No. 5 de nuestro sistema solar?</p>
+                        <br>
+                            <input type="radio" id="cbox7" class="result" name="opcion3" />
+                            <label for="cbox4">Jupiter.</label>
+                        <br>
+                            <input type="radio" id="cbox8" class="result" name="opcion3" />
+                            <label for="cbox5">Neptuno.</label>
+                        <br>
+                            <input type="radio" id="cbox9" class="result" name="opcion3" />
+                            <label for="cbox6" id="response">Mercurio.</label>
+                        </div>
                 </div>
+            </div>
+
             <div id="food">
                 <div id="questionF1">
                     <h2>Pregunta No.1</h2>
@@ -128,8 +125,11 @@
             </div>
         </div>
         <br>
-            <div id="btnSend">
-                <button type="button" id="btnOne" class="btn">Enviar</button>
+            <div id="btnSendAstronomy">
+                <button type="button" id="btnAstronomy" class="btn">Enviar</button>
+            </div>
+            <div id="btnSendFood">
+                <button type="button" id="btnFood" class="btn">Enviar</button>
             </div>
     </div>
     <br>
@@ -138,11 +138,17 @@
         <div id="resp2"></div>
         <br>
         <div id="resp3"></div>
+        
         <div id="respF"></div>
         <br>
         <div id="respF2"></div>
         <br>
         <div id="respF3"></div>
+        <br>
+        <div id="winAstronomy"></div>
+        <br>
+        <div id="winFood"></div>
+        <br>
     </main>
     <footer></footer>
     <div id="btnReload">
