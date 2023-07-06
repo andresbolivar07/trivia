@@ -158,12 +158,5 @@ btnFood.addEventListener("click", showFood);
 const goToHome = () => {
     window.location.reload("index.html")
 }
-const btnHome = document.getElementById("btnF");
+const btnHome = document.getElementById("reloadGameBtn");
 btnHome.addEventListener("click", goToHome);
-
-
-
-
-
-
-
